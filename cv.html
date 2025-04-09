@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>cv</title>
+</head>
+
+<body>
+    <div class="btn">
+        <div class="btn1">
+            <a href="index.html">
+                <button>
+                    Accueil
+                </button>
+            </a>
+        </div>
+        <div class="btn2">
+            <button id="special_btn">
+                Télécharger
+            </button>
+        </div>
+        <div class="btn3">
+            <button onclick="changerCouleur()">
+                Couleur
+            </button>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div class="cote_gauche">
+            <div class="rectangle">
+                <div class="cadre">
+                    <img src="images/img1.png" alt="photo1">
+                </div>
+            </div>
+            <div class="info">
+                <div class="barre">
+                    <div class="line"></div>
+                </div>
+                <div class="bio">
+                    <div class="contact">
+                        <p class="titre">
+                            <span class="icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                            <span class="text">Contactez-Moi</span>
+                        </p>
+                        <ul>
+                            <li>
+                                <span class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                                <span class="texte">+223 97088204</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                                <span class="texte">www.djimmoh.com</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                <span class="texte">Bamako, Mali</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tiret">----------------------------------------</div>
+                    <div class="reference">
+                        <p class="titre">
+                            <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                            <span class="text">Reference</span>
+                        </p>
+                        <ul>
+                            <li>
+                                <h1 class="sous_titre">Lassana Sidibé</h1>
+                                <span>Kayes, Khasso</span>
+                                <span>Tel: +223 97088204</span>
+                                <span>Email: sidibe@gmail.com</span>
+                            </li>
+                            <li>
+                                <h1 class="sous_titre">Ibrahim Dembélé</h1>
+                                <span class="">Kayes, Khasso</span>
+                                <span class="">Tel: +223 83460898</span>
+                                <span class="">Email: ibra@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tiret">-----------------------------------------</div>
+                    <div class="education">
+                        <p class="titre">
+                            <span class="icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                            <span class="text">éducation</span>
+                        </p>
+                        <ul>
+                            <li>
+                                <h1 class="sous_titre">Technolab-ISTA</h1>
+                                <span>Licence en Génie Logiciel</span>
+                                <span>2023-2024</span>
+                            </li>
+                            <li>
+                                <h1 class="sous_titre">Technolab-ISTA</h1>
+                                <span>DUT en IG</span>
+                                <span>2022-2023</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cote_droite">
+            <div class="barre">
+                <div class="line"></div>
+            </div>
+            <div class="bio">
+                <div class="nom">
+                    <h1 class="special">Djime <span style="color: orange;"> Dembélé</span></h1>
+                    <p>Developpeur Web</p>
+                </div>
+                <div class="description">
+                    <p class="titre">
+                        <span class="icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                        <span class="text1">A propos de moi</span>
+                    </p>
+                    <p class="descript_texte">
+                        Je suis passionné par le développement logiciel et le web. J'ai une Licence en Génie Logiciel et un
+                        DUT en Informatique de Gestion. Mon parcours m'a donné des compétences techniques solides. Je
+                        travaille bien en équipe pour atteindre des objectifs communs.
+                    </p>
+                </div>
+                <div class="experience">
+                    <p class="titre">
+                        <span class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                        <span class="text1">Expexience professionelle</span>
+                    </p>
+                    <div>
+                        <ul>
+                            <li class="exp">Développeur 2023-2025</li>
+                            <li class="exp">Boutiquier 2020-2022</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="competence">
+                    <p class="titre">
+                        <span class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+                        <span class="text1">compétences</span>
+                    </p>
+                    <div class="boite">
+                        <h4>Word Oficce</h4>
+                        <div class="percent">
+                            <div style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="boite">
+                        <h4>HTML-5</h4>
+                        <div class="percent">
+                            <div style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="boite">
+                        <h4>CSS3</h4>
+                        <div class="percent">
+                            <div style="width: 55%;"></div>
+                        </div>
+                    </div>
+                    <div class="boite">
+                        <h4>JS</h4>
+                        <div class="percent">
+                            <div style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,644 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    height: 1050px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid gray;
+    background-color: #111;
+}
+
+.container .cote_gauche {
+    position: relative;
+    background: rgb(65, 50, 50);
+    padding: 0;
+}
+
+.container .cote_droite {
+    position: relative;
+    background: white;
+    padding: 0;
+    display: flex;
+}
+
+.container .cote_droite .barre .line {
+    width: 3px;
+    height: 1050px;
+    background-color: black;
+}
+
+.cote_gauche .rectangle {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: -5px solid transparent;
+    border-right: 375px solid transparent;
+    border-top: 325px solid #FFAE2D;
+}
+
+.cadre {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 80px;
+    left: 90px;
+    border: 5px solid gray;
+    border-radius: 50% 50% 50% 0%;
+    overflow: hidden;
+}
+
+.cadre img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    height: 68%;
+}
+
+.bio {
+    margin-bottom: 40px;
+    padding-left: 15px;
+    height: 50%;
+}
+
+.barre {
+    padding-left: 35px;
+    z-index: 1;
+}
+
+.line {
+    width: 2px;
+    height: 1000px;
+    background-color: white;
+}
+
+.contact {
+    color: white;
+    padding-top: 10px;
+}
+
+.titre {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.titre .icon {
+    width: 45px;
+}
+
+.contact ul {
+    position: relative;
+    padding-left: 0;
+}
+
+.contact ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contact ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+.contact ul li span {
+    font-weight: 300;
+}
+
+.contact .titre .text::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 10px;
+    width: 10px;
+    height: 30px;
+    top: -10px;
+    left: -43px;
+    z-index: 2;
+}
+
+.tiret {
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.reference {
+    position: relative;
+    color: white;
+}
+
+.reference .sous_titre {
+    font-size: 15px;
+    position: relative;
+}
+
+.reference .sous_titre::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 4px;
+    left: -21px;
+    z-index: 2;
+}
+
+.reference ul {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    padding-left: 0;
+}
+
+.reference ul li span {
+    display: block;
+    font-size: 10px;
+    margin: 10px 0;
+}
+
+.education {
+    position: relative;
+    color: white;
+    padding-top: 10px;
+}
+
+.education .sous_titre {
+    position: relative;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.education ul {
+    position: relative;
+    list-style: none;
+    padding-left: 0;
+}
+
+.education ul li span {
+    display: block;
+    font-size: 10px;
+    margin-bottom: 0;
+}
+.education .titre .text::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 10px;
+    width: 10px;
+    height: 30px;
+    top: -10px;
+    left: -47px;
+    z-index: 2;
+}
+
+.education .sous_titre::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 8px;
+    left: -21px;
+    z-index: 2;
+}
+
+.education .special0::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: -21px;
+    z-index: 2;
+}
+
+.nom {
+    width: 94%;
+    height: 101px;
+    background: rgb(228, 219, 219);
+    padding: 60px 0px 60px 70px;
+    margin-top: 66px;
+    margin-left: -53px;
+    z-index: 0;
+}
+
+.description .titre {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 93px;
+    padding-left: 30px;
+}
+
+.description .titre .icon {
+    width: 45px;
+    height: 45px;
+    background-color: #FFAE2D;
+    border-radius: 50%;
+}
+
+.description .descript_texte {
+    padding-left: 30px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.experience .titre {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 45px;
+    padding-left: 30px;
+}
+
+.experience .titre .text1::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 10px;
+    width: 10px;
+    height: 30px;
+    top: -10px;
+    left: -74px;
+    z-index: 2;
+}
+
+.experience .titre .icon {
+    width: 45px;
+    height: 45px;
+    background-color: #FFAE2D;
+    border-radius: 50%;
+}
+
+.experience ul {
+    position: relative;
+    list-style: none;
+    padding-left: 30px;
+}
+
+.experience ul li {
+    margin: 10px 0;
+}
+
+.competence {
+    padding-right: 20px;
+}
+
+.competence .titre .text1::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 10px;
+    width: 10px;
+    height: 30px;
+    top: -10px;
+    left: -74px;
+    z-index: 2;
+}
+.competence .titre {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 45px;
+    padding-left: 30px;
+}
+
+.competence .titre .icon {
+    width: 45px;
+    background-color: #FFAE2D;
+    border-radius: 50%;
+}
+
+.competence .boite {
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.competence .boite h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.competence .boite .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: black;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.competence .boite .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #FFAE2D;
+    border-radius: 5px;
+}
+
+.container0 {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    /* Adjust for A4 */
+    min-height: 1000px;
+    background: #FFAE2D;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.cadre1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 90px;
+    bottom: 80px;
+    left: 400px;
+    border: 5px solid;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cadre1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}.message {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 400px;
+    bottom: 80px;
+    left: 400px;
+    margin: 0;
+}
+
+.message h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    padding-right: 25px;
+}
+
+.message p {
+    font-size: 25px;
+}
+
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.btn .btn1 {
+    margin-right: 10px;
+    color: #FFAE2D;
+}
+
+.btn .btn2 {
+    margin-right: 10px;
+    color: #FFAE2D;
+}
+
+.btn .btn1 button {
+    background: #FFAE2D;
+    border-radius: 5px;
+}
+
+.btn .btn2 button {
+    background: #FFAE2D;
+    border-radius: 5px;
+}
+
+.btn .btn3 button {
+    background: #FFAE2D;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: #ffa500;
+    color: #000;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #111;
+    color: #00bfff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.text {
+    position: relative;
+}
+
+.text::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 10px;
+    width: 10px;
+    height: 30px;
+    top: -10px;
+    left: -45px;
+    z-index: 2;
+}
+
+.texte {
+    position: relative;
+}
+
+.texte::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: -55px;
+    z-index: 2;
+}
+
+.topic {
+    position: relative;
+    font-size: 45px;
+}
+
+.topic::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: -21px;
+    z-index: 2;
+}
+
+.text1 {
+    position: relative;
+}
+
+.text1::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 10px;
+    width: 10px;
+    height: 30px;
+    top: -10px;
+    left: -77px;
+    z-index: 2;
+}
+
+.special {
+    position: relative;
+}
+
+.special::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 10px;
+    width: 10px;
+    height: 40px;
+    top: 0;
+    left: -40px;
+    z-index: 2;
+}
+
+.exp {
+    position: relative;
+}
+
+.exp::before {
+    position: absolute;
+    content: "";
+    background: #FFAE2D;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 8px;
+    left: -52px;
+    z-index: 2;
+}
+
+
+@media (max-width: 600px) {
+    .btn {
+      flex-direction: column;         
+      align-items: center;                                
+      width: 90%;
+    }
+
+    .container {
+      flex-direction: row;
+      align-items: center;            
+      width: 100%;
+    }
+
+  
+    .cote_gauche {
+        height: 100%;
+        width: 60%;
+    }
+
+    .cote_droite {
+      height: 100%;
+      width: 90%;                 
+    }
+  }
+  
+
+@media (max-width: 1024px) and (min-width: 601px) {
+    .btn {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .container {
+      flex-direction: row;
+      align-items: center;
+      width: 90%;
+    }
+  
+    .cote_gauche {
+        height: 100%;
+        width: 90%;
+    } 
+    .cote_droite {
+        height: 100%;
+        width: 90%;
+    }
+  }
+
